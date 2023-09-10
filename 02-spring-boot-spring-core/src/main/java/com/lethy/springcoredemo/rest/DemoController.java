@@ -10,23 +10,15 @@ import org.springframework.web.bind.annotation.RestController;
 public class DemoController {
 
     private Coach coach;
-    private Coach anotherCoach;
 
     @Autowired
-    DemoController(@Qualifier("cricketCoach") Coach coach,
-                   @Qualifier("cricketCoach") Coach anotherCoach) {
+    DemoController(@Qualifier("cricketCoach") Coach coach) {
         System.out.println("In constructor: " + getClass().getSimpleName());
         this.coach = coach;
-        this.anotherCoach = anotherCoach;
     }
 
     @GetMapping("/dailyworkout")
     String getDailyWorkout() {
         return coach.getDailyWorkout();
-    }
-
-    @GetMapping("/check")
-    String check() {
-        return "Comparing beans: coach == another coach = " + (coach == anotherCoach);
     }
 }
