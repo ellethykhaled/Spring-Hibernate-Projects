@@ -1,4 +1,4 @@
-package com.lethy.springcoredemo;
+package com.lethy.springcoredemo.common;
 
 public interface Coach {
     String getDailyWorkout();

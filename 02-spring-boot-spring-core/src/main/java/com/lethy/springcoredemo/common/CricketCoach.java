@@ -1,4 +1,4 @@
-package com.lethy.springcoredemo;
+package com.lethy.springcoredemo.common;
 
 import org.springframework.stereotype.Component;
 
