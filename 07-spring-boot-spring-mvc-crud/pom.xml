@@ -13,7 +13,7 @@
 	<groupId>com.luv2code.springboot</groupId>
 	<artifactId>thymeleafdemo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>thymeleafdemo</name>
+	<name>thymeleaf-demo</name>
 	<description>Demo project for Spring Boot</description>
 	
 	<properties>
@@ -21,8 +21,11 @@
 	</properties>
 	
 	<dependencies>
-		<!-- TODO: Add dependency for mysql -->
-
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.33</version>
+		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
